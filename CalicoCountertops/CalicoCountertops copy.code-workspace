@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "name": "CalicoCountertops",
+      "path": "."
+    },
+    {
+      "name": "Calico-Countertops",
+      "path": "../../Calico-Countertops/Calico-Countertops"
+    }
+  ]
+}

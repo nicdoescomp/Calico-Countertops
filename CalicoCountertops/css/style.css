@@ -1,0 +1,185 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Centered Opening Hours Style */
+.opening-hours {
+    width: 100%; /* Full width */
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Padding for top and bottom */
+    background-color: rgba(248, 248, 248, 0.9); /* Background color for visibility */
+    position: relative; /* Position relative for stacking context */
+    z-index: 1000; /* Ensure it appears above other content */
+    margin-bottom: 20px; /* Spacing below the opening hours */
+}
+
+.framer-text {
+    font-size: 16px; /* Adjust font size if needed */
+    color: rgb(0, 7, 20); /* Text color */
+}
+
+/* Carousel style */
+.carousel {
+    position: relative; /* For positioning the buttons */
+    max-width: 800px; /* Max width for the carousel */
+    margin: 20px auto; /* Center the carousel */
+    overflow: hidden; /* Hide overflow */
+}
+
+.carousel-images {
+    display: flex; /* Display images in a row */
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.carousel-images img {
+    max-width: 100%; /* Ensure images scale correctly */
+    display: none; /* Hide images by default */
+}
+
+.carousel-images img.active {
+    display: block; /* Show active image */
+}
+
+/* Carousel buttons */
+.carousel-button {
+    position: absolute; /* Positioning relative to the carousel */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    border: none;
+    font-size: 24px; /* Button size */
+    cursor: pointer; /* Pointer cursor */
+    padding: 10px;
+}
+
+.prev {
+    left: 10px; /* Left button */
+}
+
+.next {
+    right: 10px; /* Right button */
+}
+
+/* Style for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Place items far apart */
+    align-items: center; /* Vertically center the items */
+    padding: 20px; /* Add some padding */
+    background-color: rgba(248, 248, 248, 0.9); /* Light background color */
+}
+
+/* Style for the logo */
+.logo {
+    font-family: 'Montagu Slab', serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style for the navigation links */
+.nav-links ul {
+    list-style: none; /* Remove default list style */
+    display: flex; /* Align the links horizontally */
+    gap: 20px; /* Space between links */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Dark text color */
+    font-weight: 400;
+}
+
+.nav-links a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Button styles */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-me {
+    text-align: center; /* Center text */
+    padding: 40px 20px; /* Add padding */
+    background-color: rgba(0, 0, 0, 0.7); /* Background color */
+    color: white; /* Text color */
+}
+
+.contact-me h2 {
+    font-size: 24px; /* Heading size */
+    margin-bottom: 10px; /* Spacing below heading */
+}
+
+.contact-me p {
+    margin-bottom: 20px; /* Spacing below paragraph */
+}
+
+/* Instagram link style */
+.instagram-link {
+    text-decoration: none; /* Remove underline */
+    color: rgb(0, 0, 0); /* Link color */
+    display: inline-flex; /* Flexbox for icon and text */
+    align-items: center; /* Center icon vertically */
+}
+
+/* Icon Container Style */
+.icon-container {
+    display: flex;                  /* Use flexbox for alignment */
+    align-items: center;           /* Center items vertically */
+    justify-content: center;       /* Center items horizontally */
+    background-color: #c0bdbd;    /* Background color (light gray) */
+    border-radius: 8px;           /* Rounded corners */
+    padding: 3px;                 /* Padding around the icon */
+    margin: 5px 0;               /* Margin for spacing */
+    font-size: 40px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.icon-container:hover {
+    background-color: #ffffff;     /* Change background color on hover */
+}
+
+.instagram-icon {
+    width: 32px;                  /* Set icon width */
+    height: 32px;                 /* Set icon height */
+    margin-right: 8px;            /* Spacing between icon and text */
+}
+
+
+
+
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    .contact-me h2 {
+        font-size: 20px;          /* Smaller heading size on small screens */
+    }
+    
+    .contact-me p {
+        font-size: 14px;          /* Smaller paragraph text */
+    }
+    
+    .instagram-icon {
+        width: 20px;              /* Adjust icon size */
+        height: 20px;             /* Adjust icon size */
+    }
+}
